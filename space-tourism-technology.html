@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="space-tourism.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Bellefair&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Barlow:wght@100;200&family=Bellefair&display=swap" rel="stylesheet" />
+    <title>Space-tourism-technology</title>
+</head>
+
+<body class="tech-Bg">
+    <div class="container">
+        <header>
+            <img src="./project3Img/logo.svg" alt="logo" class="logo" />
+            <img src="./project3Img/Rectangle.png" alt="rec" class="rec" />
+            <i class="fa-solid fa-bars drop_menu_icon" onclick="open_btn()"></i>
+            <nav id="nav" class="dest-navBg crew-nav-bg tech-nav-bg">
+                <i class="fa-solid fa-xmark close_menu_icon" onclick="close_btn()"></i>
+                <ul class="navList">
+                    <li><a href="./index.html"><span><b>00</b></span>HOME</a></li>
+                    <li>
+                        <a href="./space-tourism-destination.html"><span><b>01</b></span>DESTINATION</a>
+                    </li>
+                    <li><a href="./space-tourism-crew.html"><span><b>02</b></span>CREW</a></li>
+                    <li class="active"><a href="./space-tourism-technology.html"><span><b>03</b></span>TECHNOLOGY</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="content destination_content crew_content tech_content fade" id="contentA">
+            <div class="first_content crew_sub_content tech">
+                <p class="space"><span>03</span>SPACE LAUNCH 101</p>
+                <div class="tech_sub_content">
+                    <div class="dot dot2">
+                        <button onclick="currentSlide(1)" class="tech_dots currentSlide">1</button>
+                        <button onclick="currentSlide(2)" class="tech_dots">2</button>
+                        <button onclick="currentSlide(3)" class="tech_dots">3</button>
+                    </div>
+                    <div class="term_content">
+                        <P>THE TERMINOLOGY…</P>
+                        <h1>LAUNCH VEHICLE</h1>
+                        <p class="info">
+                            A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite
+                            an awe-inspiring sight on the launch pad!
+                        </p>
+                    </div>
+                    <img class="bigScreen" src="./project3Img/launch.jpg" alt="launch-img">
+                    <img class="smallScreen" src="./project3Img/launchJ.jpg" alt="launch-img">
+                </div>
+            </div>
+        </div>
+        <div class="content destination_content crew_content tech_content fade" id="contentB">
+            <div class="first_content crew_sub_content tech">
+                <p class="space"><span>03</span>SPACE LAUNCH 101</p>
+                <div class="tech_sub_content">
+                    <div class="dot dot2">
+                        <button onclick="currentSlide(1)" class="tech_dots">1</button>
+                        <button onclick="currentSlide(2)" class="tech_dots currentSlide">2</button>
+                        <button onclick="currentSlide(3)" class="tech_dots">3</button>
+                    </div>
+                    <div class="term_content">
+                        <P>THE TERMINOLOGY…</P>
+                        <h1>SPACEPORT</h1>
+                        <p class="info">
+                            A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for
+                            launch.
+                        </p>
+                    </div>
+                    <img class="bigScreen" src="./project3Img/spaceport.jpg" alt="spaceport-img">
+                    <img class="smallScreen" src="./project3Img/spaceportJ.jpg" alt="spaceport-img">
+                </div>
+            </div>
+        </div>
+        <div class="content destination_content crew_content tech_content fade" id="contentC">
+            <div class="first_content crew_sub_content tech">
+                <p class="space"><span>03</span>SPACE LAUNCH 101</p>
+                <div class="tech_sub_content">
+                    <div class="dot dot2">
+                        <button onclick="currentSlide(1)" class="tech_dots">1</button>
+                        <button onclick="currentSlide(2)" class="tech_dots">2</button>
+                        <button onclick="currentSlide(3)" class="tech_dots currentSlide">3</button>
+                    </div>
+                    <div class="term_content">
+                        <P>THE TERMINOLOGY…</P>
+                        <h1>SPACE CAPSULE</h1>
+                        <p class="info">
+                            A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities
+                            to keep you entertained.
+                        </p>
+                    </div>
+                    <img class="bigScreen" src="./project3Img/space-capsule.jpg" alt="capsule-img">
+                    <img class="smallScreen" src="./project3Img/capsuleJ.jpg" alt="capsule-img">
+                </div>
+            </div>
+        </div>
+        <div>
+            <script src="./space-tourism.js"></script>
+</body>
+
+</html>

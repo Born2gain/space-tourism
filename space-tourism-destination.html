@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="space-tourism.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Bellefair&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Barlow:wght@100;200&family=Bellefair&display=swap" rel="stylesheet" />
+    <title>Space-tourism-destination</title>
+</head>
+
+<body class="destBg">
+    <div class="container">
+        <header>
+            <img src="./project3Img/logo.svg" alt="logo" class="logo" />
+            <img src="./project3Img/Rectangle.png" alt="rec" class="rec" />
+            <i class="fa-solid fa-bars drop_menu_icon" onclick="open_btn()"></i>
+            <nav id="nav" class="dest-navBg">
+                <i class="fa-solid fa-xmark close_menu_icon" onclick="close_btn()"></i>
+                <ul class="navList">
+                    <li><a href="./index.html"><span><b>00</b></span>HOME</a></li>
+                    <li class="active">
+                        <a href="./space-tourism-destination.html"><span><b>01</b></span>DESTINATION</a>
+                    </li>
+                    <li><a href="./space-tourism-crew.html"><span><b>02</b></span>CREW</a></li>
+                    <li><a href="./space-tourism-technology.html"><span><b>03</b></span>TECHNOLOGY</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="content destination_content fade" id="contentA">
+            <div class="first_content">
+                <p><span>01</span>PICK YOUR DESTINATION</p>
+                <img src="./project3Img/moon.svg" alt="moon" class="exploreImg moonImg" />
+            </div>
+            <div class="space-content sub_destination_content">
+                <ul class="navList sub_navList">
+                    <li class="active"><a onclick="currentSlide(1)">MOON</a></li>
+                    <li><a href="#mars" onclick="currentSlide(2)">MARS</a></li>
+                    <li><a href="#europa" onclick="currentSlide(3)">EUROPA</a></li>
+                    <li><a href="#titan" onclick="currentSlide(4)">TITAN</a></li>
+                </ul>
+                <h1>MOON</h1>
+                <p class="moon_content">
+                    See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.
+                </p>
+                <hr class="divider" />
+                <div class="duration">
+                    <div class="distance">
+                        <p>AVG. DISTANCE</p>
+                        <h4>384,400 KM</h4>
+                    </div>
+                    <div class="time">
+                        <p>Est. TRAVEL TIME</p>
+                        <h4>3 DAYS</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content destination_content fade" id="contentB">
+            <div class="first_content">
+                <p><span>01</span>PICK YOUR DESTINATION</p>
+                <img src="./project3Img/mars.svg" alt="mars" class="exploreImg marsImg" />
+            </div>
+            <div class="space-content sub_destination_content">
+                <ul class="navList sub_navList">
+                    <li><a href="#moon" onclick="currentSlide(1)">MOON</a></li>
+                    <li class="active">
+                        <a href="#mars" onclick="currentSlide(2)">MARS</a>
+                    </li>
+                    <li><a href="#europa" onclick="currentSlide(3)">EUROPA</a></li>
+                    <li><a href="#titan" onclick="currentSlide(4)">TITAN</a></li>
+                </ul>
+                <h1>MARS</h1>
+                <p class="mars_content">
+                    Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!
+                </p>
+                <hr class="divider" />
+                <div class="duration">
+                    <div class="distance">
+                        <p>AVG. DISTANCE</p>
+                        <h4>225 MIL. KM</h4>
+                    </div>
+                    <div class="time">
+                        <p>Est. TRAVEL TIME</p>
+                        <h4>9 MONTHS</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content destination_content fade" id="contentC">
+            <div class="first_content">
+                <p><span>01</span>PICK YOUR DESTINATION</p>
+                <img src="./project3Img/europa.svg" alt="europa" class="exploreImg europaImg" />
+            </div>
+            <div class="space-content sub_destination_content">
+                <ul class="navList sub_navList">
+                    <li><a href="#moon" onclick="currentSlide(1)">MOON</a></li>
+                    <li><a href="#mars" onclick="currentSlide(2)">MARS</a></li>
+                    <li class="active">
+                        <a href="#europa" onclick="currentSlide(3)">EUROPA</a>
+                    </li>
+                    <li><a href="#titan" onclick="currentSlide(4)">TITAN</a></li>
+                </ul>
+                <h1>EUROPA</h1>
+                <p class="europa_content">
+                    The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.
+                </p>
+                <hr class="divider" />
+                <div class="duration">
+                    <div class="distance">
+                        <p>AVG. DISTANCE</p>
+                        <h4>628 MIL. KM</h4>
+                    </div>
+                    <div class="time">
+                        <p>Est. TRAVEL TIME</p>
+                        <h4>3 YEARS</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content destination_content fade" id="contentD">
+            <div class="first_content">
+                <p><span>01</span>PICK YOUR DESTINATION</p>
+                <img src="./project3Img/titan.svg" alt="titan" class="exploreImg titanImg" />
+            </div>
+            <div class="space-content sub_destination_content">
+                <ul class="navList sub_navList">
+                    <li><a href="#moon" onclick="currentSlide(1)">MOON</a></li>
+                    <li><a href="#mars" onclick="currentSlide(2)">MARS</a></li>
+                    <li><a href="#europa" onclick="currentSlide(3)">EUROPA</a></li>
+                    <li class="active">
+                        <a href="#titan" onclick="currentSlide(4)">TITAN</a>
+                    </li>
+                </ul>
+                <h1>TITAN</h1>
+                <p class="titan_content">
+                    The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.
+                </p>
+                <hr class="divider" />
+                <div class="duration">
+                    <div class="distance">
+                        <p>AVG. DISTANCE</p>
+                        <h4>1.6 BIL. KM</h4>
+                    </div>
+                    <div class="time">
+                        <p>Est. TRAVEL TIME</p>
+                        <h4>7 YEARS</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./space-tourism.js">
+    </script>
+</body>
+
+</html>
